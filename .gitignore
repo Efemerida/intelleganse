@@ -1,0 +1,39 @@
+# macOS
+.DS_Store
+**/.DS_Store     # чтобы игнорировать во всех подпапках
+
+# Flutter / Dart
+.dart_tool/
+.packages
+.pub/
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+
+# Generated files
+gen/
+
+# Android
+/android/.gradle/
+android/app/build/
+android/local.properties
+
+# iOS
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Flutter/Generated.xcconfig
+ios/Flutter/App.framework
+ios/Flutter/FlutterPluginRegistrant/
+ios/Runner.xcworkspace/
+ios/build/
