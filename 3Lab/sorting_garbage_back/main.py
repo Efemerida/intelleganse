@@ -14,7 +14,7 @@ os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 print(f'Using device: {device}')
-classes = ['Glass', 'Metal', 'Organic Waste', 'Paper and Cardboard', 'Plastic', 'Textiles']
+classes = ['Стекло', 'Металл', 'Органические отходы', 'Бумага и картон', 'Пластик', 'Текстиль']
 model_path = "best_model.pth"
 val_transform = transforms.Compose([
     transforms.Resize((224, 224)),
@@ -96,4 +96,5 @@ async def upload_photo(photo: UploadFile = File(...)):
 
 if __name__ == "__main__":
     import uvicorn
+
     uvicorn.run(app, host="0.0.0.0", port=8000)
