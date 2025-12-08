@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  trash-classifier:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: trash-classifier
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./uploads:/uploads
